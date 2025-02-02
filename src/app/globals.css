@@ -14,7 +14,7 @@
   ::before,
   ::backdrop,
   ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
+    border-color: #999;
   }
 }
 
@@ -22,13 +22,6 @@
   --background: #f4f4f4;
   --foreground: #171717;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
 
 body {
   color: var(--foreground);

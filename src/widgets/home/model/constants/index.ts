@@ -1,0 +1,1 @@
+export { sliderContents } from "./slider";

@@ -1,32 +1,37 @@
-import React from "react";
+"use client";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, FreeMode } from "swiper/modules";
+import "swiper/css";
+
+import { sliderContents } from "@/widgets/home/model";
 
 export default function AnimatedSlider() {
   return (
-    <div className="w-full flex overflow-x-scroll fixed top-3">
-      <span className="p-2 px-4 flex-shrink-0 bg-[#7BB9FF]">
-        특별한 포토스팟을 찾아보세요!
-      </span>
-      <span className="p-2 px-4 flex-shrink-0 bg-[#FF7BA5]">
-        find your Photo Spot !
-      </span>
-      <span className="p-2 px-4 flex-shrink-0  bg-[#FFE57B]">
-        あなたのフォトスポットを見つけましょう！
-      </span>
-      <span className="p-2 px-4 flex-shrink-0 bg-[#FFA17B]">
-        Encontra o teu ponto fotográfico!
-      </span>
-      <span className="p-2 px-4 flex-shrink-0 bg-[#7BB9FF]">
-        특별한 포토스팟을 찾아보세요!
-      </span>
-      <span className="p-2 px-4 flex-shrink-0 bg-[#FF7BA5]">
-        find your Photo Spot !
-      </span>
-      <span className="p-2 px-4 flex-shrink-0  bg-[#FFE57B]">
-        あなたのフォトスポットを見つけましょう！
-      </span>
-      <span className="p-2 px-4 flex-shrink-0 bg-[#FFA17B]">
-        Encontra o teu ponto fotográfico!
-      </span>
+    <div className="swiper-container w-full flex overflow-x-scroll fixed top-3">
+      <Swiper
+        spaceBetween={0}
+        slidesPerView={4}
+        centeredSlides={false}
+        loop={true}
+        freeMode={true}
+        speed={4000}
+        autoplay={{
+          delay: 0,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: false,
+        }}
+        modules={[Autoplay, FreeMode]}
+      >
+        {sliderContents.map((slider, index) => (
+          <SwiperSlide
+            key={index}
+            className={`p-2 px-4 flex-shrink-0 text-center text-nowrap text-ellipsis bg-[${slider.color}]`}
+          >
+            {slider.content}
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 }

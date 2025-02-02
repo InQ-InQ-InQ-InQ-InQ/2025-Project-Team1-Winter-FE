@@ -1,10 +1,6 @@
 @import "tailwindcss";
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
+  * {
     border-color: #999;
   }
 }

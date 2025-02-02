@@ -3,7 +3,7 @@ import HomeSearch from "./HomeSearch";
 import AnimatedSlider from "./AnimatedSlider";
 import HomeRegionButtons from "./HomeRegionButtons";
 
-export default function Home() {
+export default function HomeLayout() {
   return (
     <div className="min-h-screen flex flex-col gap-4 items-center justify-center">
       <AnimatedSlider />

@@ -1,5 +1,5 @@
-import { Home } from "@/widgets/home/ui";
+import { HomeLayout } from "@/widgets/home/ui";
 
 export default function Page() {
-  return <Home />;
+  return <HomeLayout />;
 }

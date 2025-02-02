@@ -1,4 +1,4 @@
-import { Home } from "@/widgets";
+import { Home } from "@/widgets/home";
 
 export default function Page() {
   return <Home />;

@@ -7,7 +7,7 @@ import {
 
 export default function HomeLayout() {
   return (
-    <div className="min-h-screen flex flex-col gap-4 items-center justify-center">
+    <div className="flex min-h-screen flex-col items-center justify-center gap-4">
       <AnimatedSlider />
       <span className="prompt-extrabold text-6xl">SpotShare</span>
       <HomeSearch />

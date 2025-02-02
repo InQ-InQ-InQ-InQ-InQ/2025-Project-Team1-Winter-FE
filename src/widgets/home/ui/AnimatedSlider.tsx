@@ -8,7 +8,7 @@ import { sliderContents } from "@/widgets/home/model";
 
 export default function AnimatedSlider() {
   return (
-    <div className="swiper-container w-full flex overflow-x-scroll fixed top-3">
+    <div className="swiper-container fixed top-3 flex w-full overflow-x-scroll">
       <Swiper
         spaceBetween={0}
         slidesPerView={4}
@@ -26,7 +26,7 @@ export default function AnimatedSlider() {
         {sliderContents.map((slider, index) => (
           <SwiperSlide
             key={index}
-            className={`p-2 px-4 shrink-0 text-center text-nowrap text-ellipsis`}
+            className={`shrink-0 p-2 px-4 text-center text-nowrap text-ellipsis`}
             style={{ backgroundColor: slider.color }}
           >
             {slider.content}

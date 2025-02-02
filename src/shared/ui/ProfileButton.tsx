@@ -6,13 +6,17 @@ import { cn } from "@/shared/utils";
 
 interface ProfileProps {
   className?: string;
+  flex?: boolean;
 }
 
-export default function ProfileButton({ className }: ProfileProps) {
+export default function ProfileButton({
+  className,
+  flex = false,
+}: ProfileProps) {
   const [isVisible, setVisible] = useState(false);
   return (
     <div
-      className={cn("absolute w-fit", className)}
+      className={cn("w-fit", className, flex ? "flex" : "absolute")}
       onClick={() => setVisible(!isVisible)}
       // onMouseEnter={() => setVisible(true)}
       // onMouseLeave={() => setVisible(false)}

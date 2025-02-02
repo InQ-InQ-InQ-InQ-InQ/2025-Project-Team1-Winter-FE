@@ -3,9 +3,9 @@ import { regions } from "@/widgets/home/model";
 
 export default function HomeRegionButtons() {
   return (
-    <div className="absolute bottom-3 flex h-fit w-full flex-col gap-y-5 p-10">
+    <div className="absolute bottom-3 flex h-fit w-full flex-col gap-y-4 p-10 md:gap-y-5">
       <p className="text-3xl font-extrabold">지역으로 찾아보기</p>
-      <div className="flex gap-5">
+      <div className="flex gap-2 md:gap-5">
         {regions.map((region, index) => (
           <RegionButton key={index} name={region} />
         ))}
@@ -26,7 +26,7 @@ function RegionButton({ name }: Region) {
         backgroundImage: `url(/images/${name}.png)`,
       }}
     >
-      <span className="relative z-20 text-2xl font-bold text-white">
+      <span className="relative z-20 text-lg font-bold text-white md:text-2xl">
         {name}
       </span>
       <div className="absolute inset-0 rounded-lg bg-black/20" />

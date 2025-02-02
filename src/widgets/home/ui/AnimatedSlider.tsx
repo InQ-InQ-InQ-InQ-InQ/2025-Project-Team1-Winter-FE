@@ -26,7 +26,8 @@ export default function AnimatedSlider() {
         {sliderContents.map((slider, index) => (
           <SwiperSlide
             key={index}
-            className={`p-2 px-4 flex-shrink-0 text-center text-nowrap text-ellipsis bg-[${slider.color}]`}
+            className={`p-2 px-4 shrink-0 text-center text-nowrap text-ellipsis`}
+            style={{ backgroundColor: slider.color }}
           >
             {slider.content}
           </SwiperSlide>

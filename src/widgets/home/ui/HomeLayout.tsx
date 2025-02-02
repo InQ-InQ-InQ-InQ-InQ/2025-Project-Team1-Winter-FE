@@ -1,7 +1,9 @@
 import React from "react";
-import HomeSearch from "./HomeSearch";
-import AnimatedSlider from "./AnimatedSlider";
-import HomeRegionButtons from "./HomeRegionButtons";
+import {
+  HomeSearch,
+  AnimatedSlider,
+  HomeRegionButtons,
+} from "@/widgets/home/ui";
 
 export default function HomeLayout() {
   return (

@@ -11,9 +11,9 @@ interface RegionButtonProps {
 
 export default function HomeRegionButtons() {
   const { visible, setVisible, modalRef } = useModal();
-  const [region, setRegion] = useState("");
+  const [region, setRegion] = useState<Region | "">("");
 
-  function handleRegionClick(name: string) {
+  function handleRegionClick(name: Region) {
     setVisible(true);
     setRegion(name);
   }

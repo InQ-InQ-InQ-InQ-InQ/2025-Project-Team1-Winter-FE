@@ -11,7 +11,7 @@ interface RegionModalProps {
   visible: boolean;
   ref: React.RefObject<HTMLDivElement | null>;
   setVisible: Dispatch<SetStateAction<boolean>>;
-  setTitle: Dispatch<SetStateAction<Region | string>>;
+  setTitle: Dispatch<SetStateAction<Region | "">>;
 }
 
 export default function RegionMapModal({

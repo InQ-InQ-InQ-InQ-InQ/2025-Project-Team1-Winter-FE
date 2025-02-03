@@ -1,21 +1,59 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import "tailwindcss";
+@layer base {
+  * {
+    border-color: #999;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #f4f4f4;
+  --foreground: #171717;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Pretendard", Arial, Helvetica, sans-serif;
+}
+
+.prompt-light {
+  font-family: "Prompt", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.prompt-regular {
+  font-family: "Prompt", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.prompt-medium {
+  font-family: "Prompt", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.prompt-semibold {
+  font-family: "Prompt", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.prompt-bold {
+  font-family: "Prompt", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.prompt-extrabold {
+  font-family: "Prompt", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.prompt-black {
+  font-family: "Prompt", serif;
+  font-weight: 900;
+  font-style: normal;
 }

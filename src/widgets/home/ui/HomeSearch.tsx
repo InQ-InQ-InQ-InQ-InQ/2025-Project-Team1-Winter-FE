@@ -12,7 +12,7 @@ export default function HomeSearch() {
       >
         <IoSearch className="text-2xl text-black/70" />
       </button>
-      <input className="size-full focus:outline-hidden"></input>
+      <input className="size-full focus:outline-hidden" />
     </div>
   );
 }

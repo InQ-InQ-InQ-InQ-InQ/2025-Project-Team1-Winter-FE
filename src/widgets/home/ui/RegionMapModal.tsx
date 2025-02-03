@@ -1,8 +1,8 @@
-import React, { Dispatch, SetStateAction } from "react";
+import React, { type Dispatch, type SetStateAction } from "react";
 import { IoClose } from "react-icons/io5";
 
 import { cn } from "@/shared/utils";
-import { Region } from "@/widgets/home/types";
+import type { Region } from "@/widgets/home/types";
 import Map from "./Map";
 
 interface RegionModalProps {

@@ -10,16 +10,19 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "leaflet": "^1.9.4",
     "next": "15.1.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
+    "react-leaflet": "^5.0.0",
     "swiper": "^11.2.2",
     "tailwind-merge": "^3.0.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4.0.0",
+    "@types/leaflet": "^1.9.16",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

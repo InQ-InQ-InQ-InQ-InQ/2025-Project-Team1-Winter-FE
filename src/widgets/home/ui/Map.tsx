@@ -6,7 +6,6 @@ import "leaflet/dist/leaflet.css";
 
 import { coordinates } from "@/widgets/home/model";
 import { Region } from "@/widgets/home/types";
-import { LatLng, LatLngExpression } from "leaflet";
 
 const MapContainer = dynamic(
   () => import("react-leaflet").then((mod) => mod.MapContainer),
@@ -18,8 +17,7 @@ const TileLayer = dynamic(
 );
 
 const Map = ({ title }: { title: Region }) => {
-  const position: LatLngExpression = coordinates[title] as unknown as LatLng;
-
+  const position = coordinates[title];
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {

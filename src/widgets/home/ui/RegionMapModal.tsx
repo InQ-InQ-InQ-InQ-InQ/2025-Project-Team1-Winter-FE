@@ -7,7 +7,6 @@ import Map from "./Map";
 
 interface RegionModalProps {
   title: Region;
-
   visible: boolean;
   ref: React.RefObject<HTMLDivElement | null>;
   setVisible: Dispatch<SetStateAction<boolean>>;

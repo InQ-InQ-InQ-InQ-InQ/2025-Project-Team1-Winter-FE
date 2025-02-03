@@ -1,6 +1,6 @@
-import type { Metadata } from "next";
 import { Prompt } from "next/font/google";
 import "./globals.css";
+import { Metadata } from "next";
 
 const prompt = Prompt({
   variable: "--font-prompt",
@@ -10,6 +10,9 @@ const prompt = Prompt({
 export const metadata: Metadata = {
   title: "SpotShare",
   description: "포토스팟 공유 플랫폼",
+  icons: {
+    icon: "/favicon/favicon.ico",
+  },
 };
 
 export default function RootLayout({

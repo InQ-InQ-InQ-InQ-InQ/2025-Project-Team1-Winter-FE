@@ -38,7 +38,7 @@ export default function HomeRegionButtons() {
 
   return (
     <div className="absolute bottom-3 z-10 flex h-fit w-full flex-col gap-y-4 p-10 md:gap-y-5">
-      <p className="text-3xl font-extrabold">지역으로 찾아보기</p>
+      <p className="text-xl font-extrabold md:text-2xl">지역으로 찾아보기</p>
       <div className="flex gap-2 md:gap-5">
         {regions.map((region, index) => (
           <RegionButton key={index} name={region} />

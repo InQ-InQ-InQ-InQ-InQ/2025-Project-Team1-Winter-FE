@@ -4,6 +4,10 @@
     border-color: #999;
   }
 }
+@theme {
+  --color-primary: rgb(255, 123, 165);
+  --color-primary-200: rgb(255, 187, 206);
+}
 
 :root {
   --background: #f4f4f4;

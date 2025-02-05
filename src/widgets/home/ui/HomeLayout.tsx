@@ -8,13 +8,25 @@ import { ProfileButton } from "@/shared/ui";
 
 export default function HomeLayout() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center">
+    <div
+      className="flex min-h-screen flex-col items-center justify-center bg-cover bg-center"
+      style={{ backgroundImage: 'url("/images/scenery.png")' }}
+    >
       <AnimatedSlider />
       <ProfileButton className="top-16 right-2 md:right-4" />
-      <span className="prompt-extrabold mb-10 text-6xl">SpotShare</span>
+      <span className="prompt-extrabold mb-10 text-6xl text-white">
+        SpotShare
+      </span>
       <HomeSearch />
-      <span className="mt-2">실시간 인기 포토스팟을 찾아보세요!</span>
+      <span className="z-10 mt-2">실시간 인기 포토스팟을 찾아보세요!</span>
       <HomeRegionButtons />
+      <div
+        className="b absolute bottom-0 z-0 h-124 w-screen"
+        style={{
+          backgroundImage:
+            "linear-gradient(to top, #f4f4f4 55%, transparent 90%)",
+        }}
+      ></div>
     </div>
   );
 }

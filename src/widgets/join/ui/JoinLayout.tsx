@@ -15,9 +15,10 @@ export default function JoinLayout() {
         <FormUnit name="아이디" />
         <FormUnit name="비밀번호" repeatCheck={false} />
       </div>
-      <div className="flex justify-end">
-        <Button name="가입하기" className="mt-2" />
-      </div>
+      <Button
+        name="회원가입 하기"
+        className="mt-6 w-full bg-black text-white"
+      />
     </LoginJoinContainer>
   );
 }
@@ -30,7 +31,7 @@ interface FormUnitProps {
 function FormUnit({ name, repeatCheck = true }: FormUnitProps) {
   return (
     <div className="flex w-full flex-col gap-y-1">
-      <label className="text-xl font-semibold">{name}</label>
+      <label className="text-md">{name}</label>
       <div className="flex gap-x-1">
         <TextField />
         {repeatCheck && (

@@ -7,6 +7,8 @@
 @theme {
   --color-primary: rgb(255, 123, 165);
   --color-primary-200: rgb(255, 187, 206);
+  --color-sub: rgb(123, 185, 255);
+  --color-sub-200: rgb(166, 206, 255);
 }
 
 :root {

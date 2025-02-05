@@ -16,7 +16,7 @@ export default function ProfileButton({
   const [isVisible, setVisible] = useState(false);
   return (
     <div
-      className={cn("w-fit", className, flex ? "flex" : "absolute")}
+      className={cn("z-10 w-fit", className, flex ? "flex" : "absolute")}
       onClick={() => setVisible(!isVisible)}
       // onMouseEnter={() => setVisible(true)}
       // onMouseLeave={() => setVisible(false)}

@@ -18,13 +18,15 @@ export default function HomeLayout() {
         SpotShare
       </span>
       <HomeSearch />
-      <span className="z-10 mt-2">실시간 인기 포토스팟을 찾아보세요!</span>
+      <span className="z-10 mt-2 text-white">
+        실시간 인기 포토스팟을 찾아보세요!
+      </span>
       <HomeRegionButtons />
       <div
-        className="b absolute bottom-0 z-0 h-124 w-screen"
+        className="b absolute bottom-0 z-0 h-screen w-screen"
         style={{
           backgroundImage:
-            "linear-gradient(to top, #f4f4f4 55%, transparent 90%)",
+            "linear-gradient(to top, #f4f4f4 20%, transparent 60%)",
         }}
       ></div>
     </div>

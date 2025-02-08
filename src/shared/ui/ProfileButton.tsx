@@ -26,8 +26,9 @@ export default function ProfileButton({
       </button>
       <div
         className={cn(
-          "top-9 right-0 h-fit w-30",
+          "h-fit w-30",
           isVisible ? "absolute" : "hidden",
+          flex ? "top-14 right-2" : "top-9 right-0",
         )}
       >
         <ProfileModal />

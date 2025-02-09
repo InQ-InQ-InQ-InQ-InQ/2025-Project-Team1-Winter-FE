@@ -7,3 +7,11 @@
 ```bash
 npm run dev
 ```
+
+## 기술 스택
+
+| 항목               | 기술                             |
+| ------------------ | -------------------------------- |
+| 데이터 패칭        | 기본 `fetch` 함수, `React Query` |
+| Form Data Handling | `react-hook-form`                |
+| 지도               | `leaflet`                        |

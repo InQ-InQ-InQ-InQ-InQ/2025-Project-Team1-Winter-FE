@@ -12,6 +12,8 @@
   --color-third: rgb(255, 229, 123);
   --color-gray: rgb(153, 153, 153);
   --color-gray-600: rgb(130, 130, 130);
+  --color-bgGray: rgb(244, 244, 244);
+  --color-bgGray-50: rgb(250, 250, 250);
 }
 
 :root {

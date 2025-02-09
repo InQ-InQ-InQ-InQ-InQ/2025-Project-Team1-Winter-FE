@@ -1,9 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import { regions, useModal } from "@/widgets/home/model";
+import { regions } from "@/widgets/home/model";
 import { RegionMapModal } from "@/widgets/home/ui";
 import { Region } from "@/widgets/home/types";
+import { useModal } from "@/shared/model";
 
 interface RegionButtonProps {
   name: Region;

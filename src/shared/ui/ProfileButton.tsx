@@ -21,7 +21,7 @@ export default function ProfileButton({
       // onMouseEnter={() => setVisible(true)}
       // onMouseLeave={() => setVisible(false)}
     >
-      <button className="border-border-color/80 size-8 cursor-pointer rounded-[50%] border bg-white">
+      <button className="size-8 cursor-pointer rounded-[50%] border bg-white">
         K
       </button>
       <div

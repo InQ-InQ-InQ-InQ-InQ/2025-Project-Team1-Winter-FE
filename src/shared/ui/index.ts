@@ -4,3 +4,4 @@ export { default as TextField } from "./TextField";
 export { default as Button } from "./Button";
 export { default as LoginJoinHeader } from "./LoginJoinHeader";
 export { default as LoginJoinContainer } from "./LoginJoinContainer";
+export { default as Post } from "./Post";

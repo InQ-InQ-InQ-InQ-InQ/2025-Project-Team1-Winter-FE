@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
 import ProfileModal from "./ProfileModal";
 import { cn } from "@/shared/utils";
+import { useModal } from "../model";
 
 interface ProfileProps {
   className?: string;
@@ -13,11 +13,12 @@ export default function ProfileButton({
   className,
   flex = false,
 }: ProfileProps) {
-  const [isVisible, setVisible] = useState(false);
+  const { visible, setVisible, modalRef } = useModal();
+
   return (
     <div
       className={cn("z-10 w-fit", className, flex ? "flex" : "absolute")}
-      onClick={() => setVisible(!isVisible)}
+      onClick={() => setVisible((prev) => !prev)}
       // onMouseEnter={() => setVisible(true)}
       // onMouseLeave={() => setVisible(false)}
     >
@@ -25,9 +26,10 @@ export default function ProfileButton({
         K
       </button>
       <div
+        ref={modalRef}
         className={cn(
           "h-fit w-30",
-          isVisible ? "absolute" : "hidden",
+          visible ? "absolute" : "hidden",
           flex ? "top-14 right-2" : "top-9 right-0",
         )}
       >

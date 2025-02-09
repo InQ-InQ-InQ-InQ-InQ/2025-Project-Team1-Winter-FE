@@ -1,4 +1,4 @@
-import { Post } from "@/shared/ui";
+import { PostView } from "@/shared/ui";
 import React, { type ReactNode } from "react";
 import { CONTENT } from "@/widgets/profile/model";
 
@@ -31,28 +31,11 @@ export default function ProfileLayout({ id }: { id: string }) {
     </div>
   );
 
-  const ProfilePosts = (): ReactNode => (
-    <div className="grid size-full flex-1 grid-cols-2 gap-4 bg-white p-4 md:grid-cols-4 lg:grid-cols-6">
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-    </div>
-  );
-
   return (
     <div className="size-full flex-col">
       <ProfileHeader />
       <ProfileInfo />
-      <ProfilePosts />
+      <PostView />
     </div>
   );
 }

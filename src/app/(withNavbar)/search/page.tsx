@@ -1,5 +1,6 @@
+import { SearchLayout } from "@/widgets/search/ui";
 import React from "react";
 
 export default function page() {
-  return <div>page</div>;
+  return <SearchLayout />;
 }

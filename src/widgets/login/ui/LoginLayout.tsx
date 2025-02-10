@@ -13,13 +13,25 @@ export default function LoginLayout() {
     handleSubmit,
     formState: { errors },
   } = useForm<UserInfo>();
+
   async function onSubmit(data: UserInfo) {
     const response = await post<UserInfo>({
       endpoint: LOGIN_ENDPOINT.LOGIN,
-      data,
+      data: data,
     });
     console.log(response);
   }
+
+  // if (isSubmitSuccessful) {
+  //   return (
+  //     <LoginJoinContainer>
+  //       <p className="h2">로그인 성공!</p>
+  //       <Link href="/">
+  //         <p className="button">홈으로</p>
+  //       </Link>
+  //     </LoginJoinContainer>
+  //   );
+  // }
 
   return (
     <LoginJoinContainer>

@@ -16,6 +16,10 @@
   --color-bgGray-50: rgb(250, 250, 250);
 }
 
+.h2 {
+  @apply text-xl font-extrabold md:text-2xl;
+}
+
 .textbutton {
   @apply cursor-pointer text-sm hover:text-black/50;
 }

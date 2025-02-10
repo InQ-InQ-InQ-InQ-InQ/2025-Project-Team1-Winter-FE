@@ -7,7 +7,7 @@ export default function LoginJoinContainer({
   children: React.ReactNode;
 }) {
   return (
-    <div className="relative flex w-[80%] flex-col justify-center gap-4 rounded-lg bg-white/60 shadow-lg backdrop-blur-md xl:w-[45%]">
+    <div className="relative flex w-[80%] flex-col justify-center gap-4 rounded-lg bg-white/60 shadow-lg backdrop-blur-md md:w-[55%] xl:w-[45%]">
       <div className="z-10 flex flex-col gap-y-2 px-12 py-24 md:px-24">
         {children}
       </div>

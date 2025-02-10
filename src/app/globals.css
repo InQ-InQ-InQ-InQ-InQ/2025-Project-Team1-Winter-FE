@@ -16,6 +16,26 @@
   --color-bgGray-50: rgb(250, 250, 250);
 }
 
+.h2 {
+  @apply text-xl font-extrabold md:text-2xl;
+}
+
+.textbutton {
+  @apply cursor-pointer text-sm hover:text-black/50;
+}
+
+.button {
+  @apply hover:bg-sub z-10 w-fit cursor-pointer rounded-lg border bg-white p-2 px-4 transition duration-300 ease-in-out hover:text-white focus:outline-hidden;
+}
+
+.textfield {
+  @apply focus:border-sub h-10 w-full rounded-lg border bg-white/80 p-3 transition delay-100 ease-in-out focus:outline-hidden;
+}
+
+.validation-warn {
+  @apply text-sm text-black/60;
+}
+
 :root {
   --background: #f4f4f4;
   --foreground: #171717;

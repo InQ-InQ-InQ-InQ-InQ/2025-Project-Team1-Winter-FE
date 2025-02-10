@@ -1,6 +1,6 @@
 "use client";
 
-import { LoginJoinContainer, LoginJoinHeader } from "@/shared/ui";
+import { SharedModalContainer, SharedModalHeader } from "@/shared/ui";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { type UserInfo } from "../types";
@@ -25,18 +25,18 @@ export default function LoginLayout() {
 
   // if (isSubmitSuccessful) {
   //   return (
-  //     <LoginJoinContainer>
+  //     <SharedModalContainer>
   //       <p className="h2">로그인 성공!</p>
   //       <Link href="/">
   //         <p className="button">홈으로</p>
   //       </Link>
-  //     </LoginJoinContainer>
+  //     </SharedModalContainer>
   //   );
   // }
 
   return (
-    <LoginJoinContainer>
-      <LoginJoinHeader name="로그인" />
+    <SharedModalContainer>
+      <SharedModalHeader name="로그인" />
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex w-full flex-col gap-y-2"
@@ -77,6 +77,6 @@ export default function LoginLayout() {
           />
         </div>
       </form>
-    </LoginJoinContainer>
+    </SharedModalContainer>
   );
 }

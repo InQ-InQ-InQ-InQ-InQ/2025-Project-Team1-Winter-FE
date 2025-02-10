@@ -1,6 +1,6 @@
 "use client";
 
-import { LoginJoinContainer, LoginJoinHeader } from "@/shared/ui";
+import { SharedModalContainer, SharedModalHeader } from "@/shared/ui";
 // import { redirect } from "next/navigation";
 import React from "react";
 import { useForm } from "react-hook-form";
@@ -28,8 +28,8 @@ export default function JoinLayout() {
   }
 
   return (
-    <LoginJoinContainer>
-      <LoginJoinHeader name="회원가입" />
+    <SharedModalContainer>
+      <SharedModalHeader name="회원가입" />
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-y-4">
         {contents.map((content, ind) => (
           <div key={content}>
@@ -51,7 +51,7 @@ export default function JoinLayout() {
           value="회원가입"
         />
       </form>
-    </LoginJoinContainer>
+    </SharedModalContainer>
   );
 }
 

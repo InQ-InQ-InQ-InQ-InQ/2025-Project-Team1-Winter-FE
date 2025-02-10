@@ -18,6 +18,7 @@ export default function LoginLayout() {
     const response = await post<UserInfo>({
       endpoint: LOGIN_ENDPOINT.LOGIN,
       data: data,
+      header: { "Content-Type": "application/x-www-form-urlencoded" },
     });
     console.log(response);
   }

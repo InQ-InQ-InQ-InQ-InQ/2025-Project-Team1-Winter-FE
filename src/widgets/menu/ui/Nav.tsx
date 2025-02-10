@@ -30,7 +30,7 @@ export default function Nav() {
           >
             <IoIosSearch size={24} className="hover:text-gray" />
           </button>
-          <Link href="/">
+          <Link href="/compose/post">
             <IoAddSharp size={24} className="hover:text-gray" />
           </Link>
           <ProfileButton flex={true} />

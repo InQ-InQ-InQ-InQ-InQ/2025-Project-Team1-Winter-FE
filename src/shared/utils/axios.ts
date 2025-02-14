@@ -4,6 +4,8 @@ export const instance = axios.create({
   baseURL: "http://localhost:8080",
 });
 
+instance.defaults.withCredentials = true;
+
 interface AxiosParams {
   endpoint: string;
   params?: string;
